@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Fundo da página para telas grandes */
+body.background-big-screen {
+  background-color: #A18273;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Max width como "papel" na página */
+div.max-width {
+  position: relative;
+  width: 1400px;
+  background-color: #FFF3E1;
+}
+
+/* Background do header */
+div.header-back {
+  width: 100%;
+  height: 93px;
+  background-image: url(../images/head/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+}
+
+div.header-back::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 44px;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(66, 22, 0, 0) 14.58%, #421600 84.37%);
+  z-index: 1;
+}
+
+/* Cabeçalho, navegação, logo e linha horizontal  */
+header {
+  width: 100%;
+  height: auto;
+}
+
+header .header-content {
+  width: 100%;
+  height: 76px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.padding-content {
+  max-width: 1280px;
+  padding: 0px 40px;
+}
+
+header .flex-header-distribuition {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .logo-and-mark {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.logo-and-mark img {
+  position: relative;
+  bottom: 70px;
+}
+
+.logo-and-mark h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+}
+
+.logo-and-mark h1 a {
+  font-family: "Courgette", cursive;
+  font-size: 36px;
+  text-decoration: none;
+  color: #421600;
+  transition: color 0.5s ease-in-out;
+}
+
+.logo-and-mark h1 a:hover {
+  color: #C2673A;
+}
+
+nav.header-navegation {
+  height: 100%;
+}
+
+nav.header-navegation ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+nav.header-navegation li {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.header-navegation a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #C2673A;
+  transition: color 0.5s ease-in-out;
+}
+
+nav.header-navegation a:hover {
+  transition: 0.5s;
+  color: #421600;
+}
+
+hr {
+  height: 5px;
+  background-color: #421600;
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.35);
+  border: 0;
+  outline: 0;
+}
+
+/* Corpo padrão da página */
+div.max-width img.svg-paper-decoration {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=all.css.map */

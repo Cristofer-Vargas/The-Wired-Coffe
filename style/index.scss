@@ -1,0 +1,137 @@
+@import 'all.scss';
+
+/* Corpo da página */
+
+main.padding-content {
+  max-width: $max-width;
+  padding: $padding-page;
+  margin: 55px auto;
+  margin-bottom: 150px;
+  
+  h2 {
+    text-align: center;
+    font-family: $font-default;
+    color: $secundary-color;
+    font-size: 38px;
+    margin-bottom: 65px;
+
+  }
+
+  section.flex-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    .flip-card {
+      width: 285px;
+      height: 453px;
+      // perspective: 1000px;
+      margin: 0 auto;
+      cursor: pointer;
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s ease-out;
+        transform-style: preserve-3d;
+
+        div.card-front {
+
+          width: 100%;
+          height: 100%;
+          position: absolute;
+  
+          backface-visibility: hidden;
+  
+          div.itens-background {
+            width: 100%;
+            height: 100%;
+    
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 9px 9px;
+    
+          }
+    
+          h3 {
+            width: 100%;
+            height: 120px;
+            position: absolute;
+            bottom: 0;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            background-color: $secundary-color;
+    
+            box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.70);
+    
+            font-size: 28px;
+            font-family: $font-cursive;
+            padding: 0 50px;
+            font-weight: normal;
+          
+            border-radius: 0 0 9px 9px;      
+          
+          }
+    
+          .item-1 {
+            background-image: url(../images/main/categorias-especificos.jpg);
+          }
+    
+          .item-2 {
+            background-image: url(../images/main/categorias-aromatizados.jpg);
+          }
+    
+          .item-3 {
+            background-image: url(../images/main/categorias-especiais.jpg);
+          }
+        }
+  
+        div.card-back {
+          width: 100%;
+          height: 100%;
+  
+          position: absolute;
+          backface-visibility: hidden;
+  
+          background-color: $secundary-color;
+          transform: rotateY(180deg);
+
+          border-radius: 9px;
+
+          > h3 {
+            font-family: $font-cursive;
+            font-size: 28px;
+            font-weight: normal;
+            margin: 37px 0 18px ;
+          }
+
+          > p {
+            width: 100%;
+            padding: 15px;
+
+            font-family: $font-default;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+
+      }
+
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+  }
+
+}

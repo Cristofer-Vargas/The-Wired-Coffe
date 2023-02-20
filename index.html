@@ -10,7 +10,9 @@
   como media queries">
   <link rel="shortcut icon" href="images/favicon-twc.ico" type="image/x-icon">
   <title>The Wired Coffe</title>
-  <link rel="stylesheet" href="/style/style.css" media="all">
+  <link rel="stylesheet" href="/style/all.css" media="all">
+  <link rel="stylesheet" href="/style/index.css" media="all">
+  <link rel="stylesheet" href="/style/media-query/all.css">
 
 
 </head>
@@ -18,7 +20,7 @@
 <body class="background-big-screen">
   <div class="max-width">
     <div class="header-back">
-      
+
     </div>
 
     <header>
@@ -33,10 +35,10 @@
             </h1>
           </div>
 
-          <nav>
+          <nav class="header-navegation">
             <ul>
-              <li><a href="#">Produtos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#" title="Produtos">Produtos</a></li>
+              <li><a href="#" title="Contato">Contato</a></li>
             </ul>
           </nav>
         </div>
@@ -48,34 +50,74 @@
 
       <h2>Escolha uma Opção:</h2>
 
-      <section>
-        <div>
-          <div></div>
-          <div>
-            <h3>Cafés específicos</h3>
+      <section class="flex-cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <div class="itens-background item-1"></div>
+              <h3>
+                Cafés específicos
+              </h3>
+            </div>
+            <div class="card-back">
+              <h3>Cafés específicos</h3>
+              <p>
+                Essa categoria de café é caracterizada pelos grãos cultivados em regiões específicas do mundo, como
+                Colômbia, Brasil, Etiópia, Honduras, etc. Esses cafés possuem sabores e aromas únicos, com notas
+                características de cada região de origem. Esses cafés podem ser classificados por sua região de origem e
+                as notas de sabor e aroma associadas a cada uma delas.
+              </p>
+            </div>
           </div>
         </div>
-        
-        <div>
-          <div></div>
-          <div>
-            <h3>Cafés aromatizados</h3>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <div class="itens-background item-2"></div>
+              <h3>
+                Cafés aromatizados
+              </h3>
+            </div>
+            <div class="card-back">
+              <h3>Cafés aromatizados</h3>
+              <p>
+                Essa categoria de café é caracterizada por cafés que são misturados ou infundidos com sabores adicionais,
+                como baunilha, caramelo, canela, noz-moscada, chocolate e outros sabores. Esses cafés aromatizados são
+                populares por adicionar um toque de doçura e sabor adicionais, muitas vezes sem adicionar calorias extras.
+                Eles podem ser classificados por seus sabores específicos, e muitas vezes estão disponíveis em uma
+                variedade de sabores diferentes.
+              </p>
+            </div>
           </div>
         </div>
-        
-        <div>
-          <div></div>
-          <div>
-            <h3>Cafés especiais</h3>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <div class="itens-background item-3"></div>
+              <h3>
+                Cafés especiais
+              </h3>
+            </div>
+            <div class="card-back">
+              <h3>Cafés especiais</h3>
+              <p>
+                Esta categoria de café é composta por grãos de café de alta qualidade, cultivados sob condições
+                específicas e cuidadosamente selecionados durante o processo de produção. Esses cafés têm sabores e aromas
+                complexos e distintos, muitas vezes com notas de frutas, nozes, especiarias ou chocolate. Os cafés
+                especiais são geralmente classificados em 80 pontos de 0 a 100, assim consideradas de alta qualidade.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      
+
     </main>
 
-    <img style="width: 100%;" src="images/main/waves-lastelement.svg" alt="Waves SVG for background element">
+    <img class="svg-paper-decoration" src="images/main/waves-lastelement.svg" alt="Waves SVG for background element">
   </div>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
