@@ -1,0 +1,83 @@
+// Media Queries padrões, ou seja, cabeçalho
+
+@media screen and (max-width: 840px) {
+
+  * {
+    transition: 1s;
+  }
+
+  header {
+
+    .header-content {
+      height: auto;
+      padding: 0;
+    }
+
+    .flex-header-distribuition {
+      flex-direction: column;
+
+      .logo-and-mark {
+        flex-direction: column;
+
+        >a {
+          width: 20%;
+          height: 76px;
+          margin: auto;
+        }
+
+        img {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        h1 {
+          width: 100%;
+          margin: 0;
+          justify-content: center;
+        }
+
+      }
+
+      .header-navegation {
+        margin: 20px 0;
+
+        ul {
+          justify-content: center;
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  * {
+    transition: 1s;
+  }
+
+  header {
+
+    div.padding-content {
+      padding: 0;
+    }
+
+    nav.header-navegation {
+
+      ul {
+        gap: 30px;
+      }
+
+    }
+
+  }
+
+  main.padding-content {
+    padding: 0;
+
+  }
+
+}

@@ -20,6 +20,7 @@ body.background-big-screen {
 div.max-width {
   position: relative;
   width: 1400px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   background-color: #FFF3E1;
 }
 

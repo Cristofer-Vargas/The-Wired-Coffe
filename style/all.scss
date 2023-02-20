@@ -39,6 +39,8 @@ div.max-width {
   position: relative;
   width: 1400px;
 
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+
   background-color: $background-paper-maxwidth;
 }
 
@@ -131,8 +133,6 @@ header .logo-and-mark {
 .logo-and-mark h1 a:hover {
   color: $secundary-color;
 }
-
-
 
 nav.header-navegation {
   height: 100%;
