@@ -1,0 +1,14 @@
+@import '../all.scss';
+
+a {
+  font-family: $font-cursive;
+  font-size: 36px;
+  text-decoration: none;
+  color: $primary-color;
+  transition: color 0.5s ease-in-out;
+
+  :hover {
+    color: $secundary-color;
+  }
+
+}

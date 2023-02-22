@@ -151,4 +151,15 @@ div.max-width img.svg-paper-decoration {
   z-index: 0;
 }
 
-/*# sourceMappingURL=all.css.map */
+a {
+  font-family: "Courgette", cursive;
+  font-size: 36px;
+  text-decoration: none;
+  color: #421600;
+  transition: color 0.5s ease-in-out;
+}
+a :hover {
+  color: #C2673A;
+}
+
+/*# sourceMappingURL=contato.css.map */

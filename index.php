@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+  <meta http-equiv="cache-control" content="no-cache">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
   <title>The Wired Coffe</title>
   <link rel="stylesheet" href="./style/all.css" media="all">
   <link rel="stylesheet" href="./style/index.css" media="all">
-  <link rel="stylesheet" href="./style/media-query/all.css">
+  <link rel="stylesheet" href="./style/media-query/all.css" media="all">
 
 
 </head>
@@ -23,28 +24,7 @@
 
     </div>
 
-    <header>
-      <div class="padding-content header-content">
-        <div class="flex-header-distribuition">
-          <div class="logo-and-mark">
-            <a href="index.html" title="Início">
-              <img src="images/head/logo-the-wired-coffe.png" alt="Logo The Wired Coffe">
-            </a>
-            <h1>
-              <a href="index.html" title="Início">The Wired Coffe</a>
-            </h1>
-          </div>
-
-          <nav class="header-navegation">
-            <ul>
-              <li><a href="#" title="Produtos">Produtos</a></li>
-              <li><a href="#" title="Contato">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <hr>
-    </header>
+    <?php include('header.html') ?>
 
     <main class="padding-content">
 
