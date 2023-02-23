@@ -10,3 +10,8 @@ fetch('header.html')
 
   });
 ;
+
+function categProdutos() {
+  window.location.href = "produtos.html";
+
+}
