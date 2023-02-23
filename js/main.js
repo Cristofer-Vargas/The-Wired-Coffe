@@ -1,6 +1,6 @@
 const headerTagHTML = document.getElementById('recicly-code')
 
-fetch('../header.html')
+fetch('header.html')
   .then(function (response) {
     return response.text();
   })
