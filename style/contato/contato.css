@@ -162,4 +162,8 @@ a :hover {
   color: #C2673A;
 }
 
+div.header-back {
+  background-image: url(../../images/head/background.jpg);
+}
+
 /*# sourceMappingURL=contato.css.map */
