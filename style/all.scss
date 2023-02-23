@@ -128,13 +128,12 @@ header {
       color: $primary-color;
       transition: color 0.5s ease-in-out;
 
-      :hover {
-        color: $secundary-color;
-      }
-
+      
     }
-
-
+    
+    a:hover {
+      color: $secundary-color;
+    }
 
   }
 
@@ -169,10 +168,11 @@ nav.header-navegation {
         color: $secundary-color;
         transition: color 0.5s ease-in-out;
 
-        :hover {
-          transition: 0.5s;
-          color: $primary-color;
-        }
+      }
+
+      a:hover {
+        transition: 0.5s;
+        color: $primary-color;
       }
 
     }
@@ -195,7 +195,7 @@ main.padding-content {
   max-width: $max-width;
   padding: $padding-page;
   margin: 55px auto;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 div.max-width img.svg-paper-decoration {

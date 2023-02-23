@@ -6,14 +6,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página de contato com o suporte ou administrativo ao The Wired Coffe">
+  <meta name="description" content="Página de contato com o suporte 
+  ou administrativo ao The Wired Coffe">
+  
   <link rel="shortcut icon" href="images/favicon-twc.ico" type="image/x-icon">
   <title>Contato | The Wired Coffe</title>
 
-  <link rel="stylesheet" href="./style/all.css" media="all">
-  <link rel="stylesheet" href="./style/media-query/all.css" media="all">
-
+  <link rel="stylesheet" href="./style/all.css">
   <link rel="stylesheet" href="./style/contato/contato.css">
+  
+  <link rel="stylesheet" href="./style/media-query/all.css">
+  <link rel="stylesheet" href="./style/media-query/contato/contato.css">
 
 
 </head>
@@ -27,10 +30,27 @@
     </header>
 
     <main class="padding-content">
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio beatae animi facilis tenetur minus
-        consequuntur, eligendi voluptatum voluptates eos illo aperiam dignissimos non atque facere soluta eaque totam
-        veniam.
+      <div class="backgroundPaper">
+        <form action="cadastro.php" method="post">
+          <fieldset>
+            <legend>Nome</legend>
+            <input type="text" id="userName" placeholder="Nome Completo" maxlength="50">
+          </fieldset>
+
+          <fieldset>
+            <legend>Email</legend>
+            <input type="email" id="userEmail" placeholder="Ex.: suportetwc@gmail.com">
+          </fieldset>
+
+          <fieldset>
+            <legend>Assunto</legend>
+            <textarea id="userAssunt" cols="30" rows="10"
+            placeholder="Nos diga sua opnião e nos ajude a crescer!"
+            maxlength="500"></textarea>
+          </fieldset>
+
+          <input type="submit" value="Enviar">
+        </form>
       </div>
     </main>
 

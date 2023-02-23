@@ -1,0 +1,10 @@
+@media screen and (max-width: 840px) {
+  main.padding-content {
+    padding: 0;
+  }
+  main.padding-content div.backgroundPaper {
+    padding: 40px 20px;
+  }
+}
+
+/*# sourceMappingURL=contato.css.map */

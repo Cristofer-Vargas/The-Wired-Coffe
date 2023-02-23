@@ -1,0 +1,15 @@
+@media screen and (max-width: 840px) {
+
+  * {
+    transition: 1s;
+  }
+
+  main.padding-content {
+    padding: 0;
+
+    div.backgroundPaper {
+      padding: 40px 20px;
+    }
+
+  }
+}

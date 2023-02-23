@@ -92,7 +92,7 @@ header .logo-and-mark a {
   color: #421600;
   transition: color 0.5s ease-in-out;
 }
-header .logo-and-mark a :hover {
+header .logo-and-mark a:hover {
   color: #C2673A;
 }
 
@@ -122,7 +122,7 @@ nav.header-navegation ul li a {
   color: #C2673A;
   transition: color 0.5s ease-in-out;
 }
-nav.header-navegation ul li a :hover {
+nav.header-navegation ul li a:hover {
   transition: 0.5s;
   color: #421600;
 }
@@ -140,7 +140,7 @@ main.padding-content {
   max-width: 1280px;
   padding: 0px 40px;
   margin: 55px auto;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 div.max-width img.svg-paper-decoration {

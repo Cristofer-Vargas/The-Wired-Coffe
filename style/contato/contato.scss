@@ -1,5 +1,7 @@
 @import '../all.scss';
 
+$background-login: #FFE8C7;
+
 a {
   font-family: $font-cursive;
   font-size: 36px;
@@ -15,5 +17,101 @@ a {
 
 div.header-back {
   background-image: url(../../images/head/background.jpg);
+
+}
+
+main {
+
+  div.backgroundPaper {
+    width: 100%;
+    padding: 40px;
+    background-color: $background-login;
+    border-radius: 9px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+
+      fieldset {
+        border: 1px solid $secundary-color;
+        border-radius: 9px;
+        padding: 25px 30px;
+  
+        legend {
+          color: $secundary-color;
+          font-family: $font-default;
+          font-weight: 400;
+          padding: 0 8px;
+  
+        }
+  
+        input, textarea {
+          width: 100%;
+          padding: 14px 0;
+          background-color: transparent;
+          border: 0px;
+          outline: 0;
+  
+        }
+  
+        ::placeholder {
+          color: $secundary-color;
+          font-family: $font-default;
+          font-weight: 400;
+        }
+        
+        input {
+          border-bottom: 1px solid $secundary-color;
+  
+        }
+  
+        textarea {
+          border-left: 1px solid $secundary-color;
+          border-right: 1px solid $secundary-color;
+          padding: 18px;
+          resize: vertical;
+  
+        }
+  
+        ::-webkit-scrollbar {
+          width: 8px;
+          background-color: $background-login;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          // border-radius: 6px 0px 0px 6px;
+          background-color: $secundary-color;
+          width: 100%;
+        }
+    
+      }
+
+      input[type=submit] {
+        width: fit-content;
+        padding: 15px 80px;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        border-radius: 9px;
+        border: 0;
+
+        background-color: $terciary-color;
+        color: $background-login;
+        cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+        background-color: rgba($terciary-color, $alpha: 0.85);
+
+      }
+      
+    }
+
+  }
 
 }

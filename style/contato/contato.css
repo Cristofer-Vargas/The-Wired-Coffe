@@ -92,7 +92,7 @@ header .logo-and-mark a {
   color: #421600;
   transition: color 0.5s ease-in-out;
 }
-header .logo-and-mark a :hover {
+header .logo-and-mark a:hover {
   color: #C2673A;
 }
 
@@ -122,7 +122,7 @@ nav.header-navegation ul li a {
   color: #C2673A;
   transition: color 0.5s ease-in-out;
 }
-nav.header-navegation ul li a :hover {
+nav.header-navegation ul li a:hover {
   transition: 0.5s;
   color: #421600;
 }
@@ -140,7 +140,7 @@ main.padding-content {
   max-width: 1280px;
   padding: 0px 40px;
   margin: 55px auto;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 div.max-width img.svg-paper-decoration {
@@ -164,6 +164,75 @@ a :hover {
 
 div.header-back {
   background-image: url(../../images/head/background.jpg);
+}
+
+main div.backgroundPaper {
+  width: 100%;
+  padding: 40px;
+  background-color: #FFE8C7;
+  border-radius: 9px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+main div.backgroundPaper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+main div.backgroundPaper form fieldset {
+  border: 1px solid #C2673A;
+  border-radius: 9px;
+  padding: 25px 30px;
+}
+main div.backgroundPaper form fieldset legend {
+  color: #C2673A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 0 8px;
+}
+main div.backgroundPaper form fieldset input, main div.backgroundPaper form fieldset textarea {
+  width: 100%;
+  padding: 14px 0;
+  background-color: transparent;
+  border: 0px;
+  outline: 0;
+}
+main div.backgroundPaper form fieldset ::placeholder {
+  color: #C2673A;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+main div.backgroundPaper form fieldset input {
+  border-bottom: 1px solid #C2673A;
+}
+main div.backgroundPaper form fieldset textarea {
+  border-left: 1px solid #C2673A;
+  border-right: 1px solid #C2673A;
+  padding: 18px;
+  resize: vertical;
+}
+main div.backgroundPaper form fieldset ::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFE8C7;
+}
+main div.backgroundPaper form fieldset ::-webkit-scrollbar-thumb {
+  background-color: #C2673A;
+  width: 100%;
+}
+main div.backgroundPaper form input[type=submit] {
+  width: fit-content;
+  padding: 15px 80px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 9px;
+  border: 0;
+  background-color: #8F4C2B;
+  color: #FFE8C7;
+  cursor: pointer;
+}
+main div.backgroundPaper form input[type=submit]:hover {
+  background-color: rgba(143, 76, 43, 0.85);
 }
 
 /*# sourceMappingURL=contato.css.map */
