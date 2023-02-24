@@ -1,20 +1,5 @@
 @import '../all.scss';
 
-$background-login: #FFE8C7;
-
-a {
-  font-family: $font-cursive;
-  font-size: 36px;
-  text-decoration: none;
-  color: $primary-color;
-  transition: color 0.5s ease-in-out;
-
-  :hover {
-    color: $secundary-color;
-  }
-
-}
-
 div.header-back {
   background-image: url(../../images/head/background.jpg);
 
@@ -25,7 +10,7 @@ main {
   div.backgroundPaper {
     width: 100%;
     padding: 40px;
-    background-color: $background-login;
+    background-color: $background-categorias;
     border-radius: 9px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 
@@ -78,7 +63,7 @@ main {
   
         ::-webkit-scrollbar {
           width: 8px;
-          background-color: $background-login;
+          background-color: $background-categorias;
         }
         
         ::-webkit-scrollbar-thumb {
@@ -101,7 +86,7 @@ main {
         border: 0;
 
         background-color: $terciary-color;
-        color: $background-login;
+        color: $background-categorias;
         cursor: pointer;
       }
 

@@ -155,73 +155,104 @@ div.header-back {
   background-image: url(../../images/head/background.jpg);
 }
 
-main div.backgroundPaper {
-  width: 100%;
-  padding: 40px;
-  background-color: #FFE8C7;
+main div.procurar-produtos {
+  width: 600px;
+  height: 45px;
+  border: 2px solid #C2673A;
+  margin: 80px auto;
+  padding: 10px 20px;
   border-radius: 9px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-}
-main div.backgroundPaper form {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 35px;
+  flex-direction: row;
 }
-main div.backgroundPaper form fieldset {
-  border: 1px solid #C2673A;
-  border-radius: 9px;
-  padding: 25px 30px;
+main div.procurar-produtos img {
+  flex: auto;
+  height: 100%;
+  margin-right: 20px;
 }
-main div.backgroundPaper form fieldset legend {
-  color: #C2673A;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  padding: 0 8px;
-}
-main div.backgroundPaper form fieldset input, main div.backgroundPaper form fieldset textarea {
-  width: 100%;
-  padding: 14px 0;
+main div.procurar-produtos input[type=text] {
+  flex: 100%;
+  border: 0;
   background-color: transparent;
-  border: 0px;
+  color: #C2673A;
+}
+main div.procurar-produtos input[type=text]::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #C2673A;
+}
+main div.procurar-produtos input[type=text]:focus {
   outline: 0;
 }
-main div.backgroundPaper form fieldset ::placeholder {
-  color: #C2673A;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+main div.ajust-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-main div.backgroundPaper form fieldset input {
-  border-bottom: 1px solid #C2673A;
+main div.ajust-sections > section {
+  width: 100%;
+  min-height: 327px;
 }
-main div.backgroundPaper form fieldset textarea {
-  border-left: 1px solid #C2673A;
-  border-right: 1px solid #C2673A;
-  padding: 18px;
-  resize: vertical;
+main div.ajust-sections > section h2 {
+  margin-bottom: 17px;
 }
-main div.backgroundPaper form fieldset ::-webkit-scrollbar {
-  width: 8px;
+main div.ajust-sections > section div.overflow-container {
+  width: 100%;
+  height: 100%;
   background-color: #FFE8C7;
+  padding: 50px 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  overflow-x: auto;
 }
-main div.backgroundPaper form fieldset ::-webkit-scrollbar-thumb {
+main div.ajust-sections > section div.overflow-container div.card-container {
+  width: 170px;
+  height: 230px;
+  position: relative;
+  transition: ease-in-out 1s;
+}
+main div.ajust-sections > section div.overflow-container div.card-container div.front-card, main div.ajust-sections > section div.overflow-container div.card-container div.back-card {
+  position: absolute;
+  top: 0;
+}
+main div.ajust-sections > section div.overflow-container div.card-container div.front-card {
+  width: 170px;
+  height: 100%;
+  z-index: 1;
+  background-image: url(../../images/main/categorias-aromatizados.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 9px;
+  position: relative;
+}
+main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.price-card {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
   background-color: #C2673A;
   width: 100%;
+  border-radius: 0px 0px 9px 9px;
 }
-main div.backgroundPaper form input[type=submit] {
-  width: fit-content;
-  padding: 15px 80px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 9px;
-  border: 0;
-  background-color: #8F4C2B;
-  color: #FFE8C7;
-  cursor: pointer;
+main div.ajust-sections > section div.overflow-container div.card-container div.back-card {
+  width: 170px;
+  height: 200px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 0;
+  background-color: #FFF3E1;
+  transition: ease-in-out 1s;
 }
-main div.backgroundPaper form input[type=submit]:hover {
-  background-color: rgba(143, 76, 43, 0.85);
+main div.ajust-sections > section div.overflow-container div.card-container:hover {
+  width: 480px;
+}
+main div.ajust-sections > section div.overflow-container div.card-container:hover div.back-card {
+  width: 310px;
+  left: 170px;
+  padding: 18px;
 }
 
-/*# sourceMappingURL=contato.css.map */
+/*# sourceMappingURL=produtos.css.map */
