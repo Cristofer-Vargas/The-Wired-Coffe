@@ -193,32 +193,34 @@ main div.ajust-sections > section {
   min-height: 327px;
 }
 main div.ajust-sections > section h2 {
+  font-family: "Courgette", cursive;
+  font-size: 28px;
+  color: #421600;
   margin-bottom: 17px;
 }
-main div.ajust-sections > section div.overflow-container {
+main div.ajust-sections > section .overflow-container {
   width: 100%;
   height: 100%;
   background-color: #FFE8C7;
   padding: 50px 85px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 100px;
 }
-main div.ajust-sections > section div.overflow-container div.card-container {
+main div.ajust-sections > section .overflow-container div.card-container {
   width: 170px;
   height: 230px;
   position: relative;
   transition: width ease-in-out 1s;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card,
-main div.ajust-sections > section div.overflow-container div.card-container div.back-card {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card,
+main div.ajust-sections > section .overflow-container div.card-container div.back-card {
   position: absolute;
   top: 0;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card {
   width: 170px;
-  height: 100%;
+  height: 230px;
   z-index: 1;
   background-position: center center;
   background-size: cover;
@@ -227,7 +229,7 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   position: relative;
   transition: box-shadow ease-in-out 1s;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.price-card {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card div.price-card {
   position: absolute;
   bottom: 0;
   height: 40px;
@@ -239,18 +241,18 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   align-items: center;
   padding: 0 10px;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.price-card span.price-cifrao {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card div.price-card span.price-cifrao {
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.price-card span.price-value {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card div.price-card span.price-value {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 600;
   margin-left: 9px;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.tag-card {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card div.tag-card {
   position: absolute;
   left: -6px;
   top: 15px;
@@ -263,7 +265,7 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   font-weight: 300;
   font-size: 14px;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.front-card div.tag-card::after {
+main div.ajust-sections > section .overflow-container div.card-container div.front-card div.tag-card::after {
   content: "";
   left: 0;
   bottom: -6px;
@@ -272,34 +274,34 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   border-right: 6px solid #421600;
   display: inline-block;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-colombiano-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-colombiano-imgback {
   background-image: url(../../images/main/produtos/cafe-colombiano.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-etiope-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-etiope-imgback {
   background-image: url(../../images/main/produtos/cafe-etiope.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-indiano-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-indiano-imgback {
   background-image: url(../../images/main/produtos/cafe-indiano.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-blue-mountain-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-blue-mountain-imgback {
   background-image: url(../../images/main/produtos/cafe-blue-mountain.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-geisha-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-geisha-imgback {
   background-image: url(../../images/main/produtos/cafe-geisha-do-panama.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-bourbon-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-bourbon-imgback {
   background-image: url(../../images/main/produtos/cafe-bournon-de-ilha-bourbon.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-baunilha-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-baunilha-imgback {
   background-image: url(../../images/main/produtos/cafe-de-baunilha.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-caramelo-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-caramelo-imgback {
   background-image: url(../../images/main/produtos/cafe-de-caramelo.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.cafe-amendoa-imgback {
+main div.ajust-sections > section .overflow-container div.card-container div.cafe-amendoa-imgback {
   background-image: url(../../images/main/produtos/cafe-de-amendoa.jpg);
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.back-card {
+main div.ajust-sections > section .overflow-container div.card-container div.back-card {
   width: 170px;
   height: 200px;
   padding: 18px;
@@ -312,7 +314,7 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   background-color: #FFF3E1;
   transition: width ease-in-out 1s, left ease-in-out 1s;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.back-card p {
+main div.ajust-sections > section .overflow-container div.card-container div.back-card p {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -320,7 +322,8 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   font-size: 14px;
   color: #421600;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.back-card button.buy-button-card {
+main div.ajust-sections > section .overflow-container div.card-container div.back-card button.buy-button-card {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -335,16 +338,16 @@ main div.ajust-sections > section div.overflow-container div.card-container div.
   font-weight: bold;
   transition: opacity ease-in-out 1s;
 }
-main div.ajust-sections > section div.overflow-container div.card-container div.back-card button.buy-button-card:hover {
+main div.ajust-sections > section .overflow-container div.card-container div.back-card button.buy-button-card:hover {
   background-color: rgba(194, 103, 58, 0.75);
 }
-main div.ajust-sections > section div.overflow-container div.card-container:hover {
+main div.ajust-sections > section .overflow-container div.card-container:hover {
   width: 480px;
 }
-main div.ajust-sections > section div.overflow-container div.card-container:hover div.front-card {
+main div.ajust-sections > section .overflow-container div.card-container:hover div.front-card {
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
-main div.ajust-sections > section div.overflow-container div.card-container:hover div.back-card {
+main div.ajust-sections > section .overflow-container div.card-container:hover div.back-card {
   width: 310px;
   left: 170px;
 }

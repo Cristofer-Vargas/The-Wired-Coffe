@@ -1,9 +1,16 @@
+@import '../all.scss';
+
 // Media Queries padrões, ou seja, cabeçalho
 
 @media screen and (max-width: 840px) {
 
   * {
     transition: 1s;
+  }
+
+  div.header-back {
+    background-image: url(../../images/head/background.jpg);
+  
   }
 
   header {
@@ -68,7 +75,29 @@
     nav.header-navegation {
 
       ul {
-        gap: 30px;
+        flex-direction: column;
+        gap: 8px;
+        
+        li {
+          width: 100%;
+          background-color: $secundary-color;
+          padding: 5px;
+
+          a {
+            display: flex;
+            justify-content : center;
+
+            width: 100%;
+            height: 100%;
+            color: #FFF3E1;
+
+            font-weight: bold;
+
+          }
+
+        }
+
+
       }
 
     }

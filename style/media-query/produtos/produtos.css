@@ -3,28 +3,57 @@
     transition: 1s;
   }
   main.padding-content {
-    padding: 0 40px;
+    padding: 0;
   }
-  div.ajust-sections > section div.overflow-container {
-    display: flex;
+  main.padding-content div.procurar-produtos {
+    width: 400px;
+  }
+  main.padding-content div.ajust-sections section h2 {
+    margin: 0 20px;
+  }
+  main.padding-content div.ajust-sections section .overflow-container {
+    width: 100%;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 50px 40px;
+    align-items: center;
+    padding: 50px 0px;
+    transition: ease-in-out 1s;
   }
-  div.ajust-sections > section div.overflow-container div.back-card {
+  main.padding-content div.ajust-sections section .overflow-container div.card-container {
+    width: 170px;
+    height: 230px;
+    transition: width ease-in-out 1s, height ease-in-out 1s;
+  }
+  main.padding-content div.ajust-sections section .overflow-container div.card-container div.back-card {
+    width: 170px;
+    height: 200px;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: translateY(0);
+    transition: width ease-in-out 1s, height ease-in-out 1s, top ease-in-out 1s;
   }
-  div.ajust-sections > section div.card-container:hover {
-    height: 510px;
+  main.padding-content div.ajust-sections section .overflow-container div.card-container:hover {
+    width: 170px;
+    height: 630px;
   }
-  div.ajust-sections > section div.card-container:hover div.front-card {
-    box-shadow: 0px;
+  main.padding-content div.ajust-sections section .overflow-container div.card-container:hover div.front-card {
+    box-shadow: 0px 0px 0px 0px;
   }
-  div.ajust-sections > section div.card-container:hover div.back-card {
-    height: 310px;
-    top: 200px;
+  main.padding-content div.ajust-sections section .overflow-container div.card-container:hover div.back-card {
+    width: 170px;
+    height: 380px;
+    top: 230px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  main.padding-content {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+  main.padding-content div.procurar-produtos {
+    width: 300px;
   }
 }
 
