@@ -1,3 +1,31 @@
-
+@media screen and (max-width: 1200px) {
+  * {
+    transition: 1s;
+  }
+  main.padding-content {
+    padding: 0 40px;
+  }
+  div.ajust-sections > section div.overflow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 40px;
+  }
+  div.ajust-sections > section div.overflow-container div.back-card {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  div.ajust-sections > section div.card-container:hover {
+    height: 510px;
+  }
+  div.ajust-sections > section div.card-container:hover div.front-card {
+    box-shadow: 0px;
+  }
+  div.ajust-sections > section div.card-container:hover div.back-card {
+    height: 310px;
+    top: 200px;
+  }
+}
 
 /*# sourceMappingURL=produtos.css.map */
